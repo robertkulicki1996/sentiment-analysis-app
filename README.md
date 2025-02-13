@@ -25,7 +25,10 @@
    - Utwórz plik `.env`
    - Dodaj klucz API Hugging Face:
      ```env
-     REACT_APP_HUGGINGFACE_API_KEY=your_api_key_here
+      VITE_HUGGING_FACE_API_URL=https://api-inference.huggingface.co/models/j-hartmann/sentiment-roberta-large-english-3-classes
+      VITE_HUGGING_FACE_API_KEY=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
+
+      VITE_GRAPHQL_SERVER_URL=http://0.0.0.0:4000/
      ```
 4. Uruchom aplikację w trybie deweloperskim:
    ```sh
