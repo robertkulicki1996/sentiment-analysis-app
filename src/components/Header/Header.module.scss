@@ -1,0 +1,14 @@
+@use '../../styles/variables.scss' as *; 
+
+.Header {
+	display: block;
+	color: $primary-color;
+	font-size: 38px;
+	font-weight: bold;
+}
+
+.SubHeader {
+	color: $white-color;
+	font-size: 16px;
+	font-weight: 300;
+}

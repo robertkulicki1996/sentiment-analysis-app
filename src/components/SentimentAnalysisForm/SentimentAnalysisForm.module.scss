@@ -1,0 +1,14 @@
+@use '../../styles/variables.scss' as *; 
+
+.SentimentAnalysisForm {
+  display: flex;
+  flex-direction: column;
+  background-color: $secondary-color;
+	width: 520px;
+	padding: 24px;
+	border: 1px solid $primary-color;
+
+  @media screen and (max-width: 520px) {
+    width: 100%;
+  }
+};

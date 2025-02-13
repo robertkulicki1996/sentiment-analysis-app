@@ -1,0 +1,23 @@
+@use "./fonts.scss" as *;
+@use "./variables.scss" as vars;
+
+* {
+  font-family: "Red Hat Display", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 24px;
+  background-color: vars.$secondary-color;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+textarea {
+  margin: 0;
+  margin-bottom: 16px;
+}

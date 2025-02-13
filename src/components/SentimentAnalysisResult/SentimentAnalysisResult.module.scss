@@ -1,0 +1,71 @@
+@use '../../styles/variables.scss' as *; 
+
+.Container {
+  margin-bottom: 48px;
+}
+
+.ProgressBars {
+  display: flex;
+  flex-direction: column;
+  margin-top: 48px;
+}
+
+.ProgressItem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.ProgressItemDescription {
+  font-size: 16px;
+  font-weight: 300;
+  color: $white-color;
+  margin-bottom: 24px;
+}
+
+.Icon {
+  font-size: 40px;
+  margin-right: 15px;
+}
+
+.Green {
+  color: #8FCB81;
+}
+
+.Gray {
+  color: #B0B0B0;
+}
+
+.Red {
+  color: #E57373;
+}
+
+.ProgressBarContainer {
+  position: relative;
+  width: 100%;
+  height: 20px;
+  background-color: #eee;
+  border-radius: 0px;
+}
+
+.ProgressBar {
+  height: 100%;
+  border-radius: 0px;
+  width: 0%;
+  animation: fillProgress 1s ease-out forwards;
+}
+
+.Percentage {
+  margin-left: 10px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+@keyframes fillProgress {
+  from {
+    width: 0%;
+  }
+  to {
+    width: var(--progress);
+  }
+}
