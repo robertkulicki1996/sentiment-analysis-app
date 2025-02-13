@@ -16,16 +16,8 @@ const MainView: React.FC = () => {
     e.preventDefault();
     await sendRequest(text);
   };
-
-  useEffect(() => {
-    if (state.status === "success") {
-      setIsModalOpen(true);
-    }
-  }, [state.status]);
-
   // const handleSubmit = async (e: React.FormEvent) => {
   //   e.preventDefault();
-    
   //   if (text) {
   //     try {
   //       await getSentiment({ variables: { text } });
@@ -36,6 +28,12 @@ const MainView: React.FC = () => {
   //     }
   //   }
   // };
+
+  useEffect(() => {
+    if (state.status === "success") {
+      setIsModalOpen(true);
+    }
+  }, [state.status]);
 
   return (
     <>
@@ -64,8 +62,6 @@ const MainView: React.FC = () => {
           />
         )} */}
       </Modal>
-
-      {/* {error && toast.error(error.message, { position: 'top-right'})} */}
     </>
   );
 };
