@@ -6,13 +6,13 @@
 
 - Node.js (>=16.x)
 - npm lub yarn
-- Klucz API do Hugging Face (dla analizy sentymentu)
+- Klucz API do Hugging Face API (dla analizy sentymentu)
 
 ### Instalacja:
 
 1. Sklonuj repozytorium:
    ```sh
-   git clone 
+   git clone https://github.com/robertkulicki1996/sentiment-analysis-app.git
    cd sentiment-analysis-app
    ```
 2. Zainstaluj zależności:
@@ -35,6 +35,11 @@
    ```
 5. Otwórz przeglądarkę i przejdź do `http://localhost:3000`
 
+6. Aby skorzystać z GraphQl:
+  - Należy uruchomić server należy z katalogu głównego użyć - node server.js
+  - W pliku App.tsx odkomentować funkcję App owrapowaną ApolloProviderem a zakomentować obecną.
+  - W pliku MainView.tsx odkomentować wszystkie odpowiednie linijki kodu, a zakomentować linijki związane z obsługą z REST API.
+
 ## 🛠 Technologie użyte w projekcie
 
 - **React.js** – Framework do budowy interfejsu użytkownika.
@@ -48,8 +53,8 @@
 
 ### 1️⃣ Integracja GraphQL z Hugging Face API
 
-- **Wyzwanie**: Hugging Face używa REST API, a  użyć GraphQL.
-- **Rozwiązanie**: Stworzyliśmy własny Apollo Server, który pobiera dane z REST API i mapuje je na GraphQL.
+- **Wyzwanie**: Hugging Face używa REST API, a na potrzeby zadania potrzebowałem użyć GraphQL.
+- **Rozwiązanie**: Stworzyłem własny Apollo Server, który pobiera dane z REST API i mapuje je na GraphQL.
 
 Jeśli masz pytania, otwórz **Issue** w repozytorium! 😊
 
